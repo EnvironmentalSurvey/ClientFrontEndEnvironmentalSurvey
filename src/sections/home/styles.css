@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-rtl .swiper-button-next.swiper-button-disabled {
+    visibility: hidden;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-rtl .swiper-button-prev.swiper-button-disabled {
+    visibility: hidden;
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after,
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+    font-size: 10px;
+    color: #1D2630;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-rtl .swiper-button-next:hover::after,
+.swiper-button-next:hover::after,
+.swiper-rtl .swiper-button-prev:hover::after {
+    color: #F2F5F7;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(95, 186, 115, 0.82);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #333;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: 10px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    opacity: 1;
+    margin: 0 6px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #6B7280;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
